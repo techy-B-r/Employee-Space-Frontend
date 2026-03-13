@@ -1,1 +1,42 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Main Dashboard</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <div id="sidebar">\n        <h2>Navigation</h2>\n        <ul>\n            <li><a href="#">Dashboard</a></li>\n            <li><a href="#">Profile</a></li>\n            <li><a href="#">Settings</a></li>\n            <li><a href="#">Logout</a></li>\n        </ul>\n    </div>\n    <div id="content">\n        <h1>Welcome to the Employee Dashboard</h1>\n        <p>This is the main area where content will be displayed.</p>\n    </div>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <button class="notification-bell">🔔</button>
+                <button class="theme-toggle">🌙</button>
+            </div>
+        </header>
+        <div class="content">
+            <h2>Welcome to Your Professional Dashboard</h2>
+            <button id="openModal">Open Modal</button>
+            <div id="toast" class="toast">This is a toast notification!</div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>This is a modal overlay!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
