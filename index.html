@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Employee Space - Management System</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Dashboard</h2>
-        <ul>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    </div>
-    <div class="main-content">
-        <header>
-            <h1>Dashboard</h1>
-            <div class="header-right">
-                <input type="text" placeholder="Search...">
-                <button class="notification-bell">🔔</button>
-                <button class="theme-toggle">🌙</button>
-            </div>
-        </header>
-        <div class="content">
-            <h2>Welcome to Your Professional Dashboard</h2>
-            <button id="openModal">Open Modal</button>
-            <div id="toast" class="toast">This is a toast notification!</div>
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>This is a modal overlay!</p>
+    <div id="app">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <h1>Employee Space</h1>
                 </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#employees">Employees</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#attendance">Attendance</a></li>
+                    <li><a href="#leave">Leave</a></li>
+                    <li><a href="#complaints">Complaints</a></li>
+                    <li><a href="#meetings">Meetings</a></li>
+                    <li><a href="#admin" id="adminLink" style="display:none;">Admin</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
+
+        <main id="content" class="content">
+            <!-- Content will be dynamically loaded -->
+        </main>
     </div>
-    <script src="script.js"></script>
+
+    <script src="js/api.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
